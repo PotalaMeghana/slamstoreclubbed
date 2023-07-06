@@ -1,0 +1,21 @@
+@charset "ISO-8859-1";
+.container {
+    text-align: center;
+}
+
+.filters, #tableData {
+    margin: 0 auto;
+}
+
+th, td {
+    text-align: center;
+}
+
+.pagination {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.current-page {
+    font-weight: bold;
+}

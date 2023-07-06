@@ -1,0 +1,27 @@
+@charset "ISO-8859-1";
+
+        .container {
+            margin-top: 50px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .filter-form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .filter-form label,
+        .filter-form input,
+        .filter-form button {
+            margin-bottom: 10px;
+        }
+
+        .filter-form button {
+            align-self: flex-start;
+        }
+
+        .filter-select {
+            align-self: flex-end;
+        }

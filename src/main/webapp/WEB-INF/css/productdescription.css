@@ -1,0 +1,121 @@
+@charset "ISO-8859-1";
+
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+        background-color: #f9f9f9;
+    }
+
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+        text-align: center;
+        margin-bottom: 20px;
+        color: #333;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+
+    .product-image {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .product-image img {
+        max-width: 100%;
+        max-height: 400px;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    .product-details {
+        text-align: center;
+    }
+
+    .product-name {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 10px;
+        color: #333;
+    }
+
+    .product-description {
+        margin-bottom: 20px;
+        color: #666;
+    }
+
+    .product-price {
+        font-size: 20px;
+        margin-bottom: 20px;
+        color: #333;
+    }
+
+    label {
+        display: inline-block;
+        margin-bottom: 5px;
+        color: #666;
+    }
+
+    .qtyinp {
+        width: 50px;
+        padding: 5px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        color: #333;
+    }
+
+    .shipment-table {
+        margin-top: 10px;
+    }
+
+    .shipment-table td {
+        padding: 5px;
+    }
+
+    .buynow {
+        display: block;
+        margin-top: 20px;
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    .shipment-table input[type="submit"] {
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+ .shipment-table input[type="submit"]:hover {
+        background-color: #0056b3;
+    }
+
+    .buynow:hover {
+        background-color: #0056b3;
+    }
+
+    .not-available {
+        color: red;
+        font-style: italic;
+    }
+
+    .available {
+        color: green;
+    }

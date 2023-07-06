@@ -1,0 +1,170 @@
+
+   select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #333;
+    font-size: 14px;
+    width: 200px;
+  }
+
+  /* Custom styles for the dropdown arrow */
+  select::-ms-expand {
+    display: none; /* Remove the default arrow in Internet Explorer */
+  }
+
+  select::after {
+    content: '\25BC'; /* Unicode character for a down arrow */
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 0 8px;
+    background-color: #ccc;
+    color: #fff;
+    pointer-events: none; /* Prevent the arrow from being clickable */
+  }
+
+  /* Custom styles for the dropdown options */
+  select option {
+    background-color: #fff;
+    color: #333;
+    font-size: 14px;
+  }
+       .profile-dropdown {
+  position: relative;
+  display: inline-block;
+  transition: visibility;
+  /* Add your desired background and text colors here */
+  background-color: white;
+  color: black;
+}
+.fas fa-user{
+background-color:transparent;
+}
+
+.profile-dropdown:hover .dropdown-content {
+  display: block;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.dropdown-content {
+  position: absolute;
+  top: 100%;
+  left: -60px; /* Adjust this value as per your preference */
+  display: none;
+  overflow: hidden;
+  background-color: inherit; /* Set the background color to match the navbar */
+  min-width: 120px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 12px 10px;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  /* Add your desired background and text colors here */
+  background-color: navy;
+  color: black;
+}
+
+.dropdown-content a {
+  display: block;
+  margin-bottom: 5px;
+  white-space: nowrap; /* Ensures the content stays in a single line */
+  /* Add your desired text color here */
+  color: black;
+}
+
+.profile-dropdown:hover .dropdown-content a:hover {
+  /* Add your desired background color for hovered links here */
+  background-color: white;
+}
+
+body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }    
+   
+    header {
+  background-color:#047bd5;
+  color: #fff;
+      padding: 20px;
+      display: flex;
+      
+      justify-content: space-between;
+      align-items: center;
+}
+       
+    nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li:not(:last-child) {
+  margin-right: 10px;
+}
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      padding: 10px 20px;
+      text-decoration:none;
+    }
+    nav ul li a:hover {
+      background-color: white;
+      text-decoration:none;
+    }
+    .search-bar {
+      text-align: center;
+      padding: 20px;
+      background-color: #f2f2f2;
+    }    
+    .search-bar input[type="text"] {
+      width: 300px;
+      padding: 6px;
+      border: none;
+    }   
+    .search-bar input[type="submit"] {
+      background-color: #333;
+      color: #fff;
+      border: none;
+      padding: 6px 10px;
+      cursor: pointer;
+    }    
+    .slideshow-container {
+      position: relative;
+      width: 100%;
+      max-width: 800px;
+      margin: 0 auto;
+    }    
+       
+    .slideshow-container .slide {
+      display: none;
+    }  
+    .slideshow-container .slide.active {
+      display: block;
+    }
+    .slideshow-container img {
+    width: 100%;
+    height: 500px; /* Adjust the height as per your preference */
+    object-fit: cover; 
+    }
+    
+     a{
+     text-decoration:none;
+     }
+   
