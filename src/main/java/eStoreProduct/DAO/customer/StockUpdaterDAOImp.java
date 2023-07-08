@@ -12,12 +12,12 @@ import eStoreProduct.Exceptions.QuantityExceedsStockException;
 
 @Component
 public class StockUpdaterDAOImp implements StockUpdaterDAO {
-	private final DataSourceTransactionManager transactionManager;
+	private final DataSourceTransactionManager transactionManager1;
 	private final JdbcTemplate jdbcTemplate;
 
 	@Autowired
 	public StockUpdaterDAOImp(DataSourceTransactionManager transactionManager, JdbcTemplate jdbcTemplate) {
-		this.transactionManager = transactionManager;
+		this.transactionManager1 = transactionManager;
 		this.jdbcTemplate = jdbcTemplate;
 	}
 
@@ -31,7 +31,7 @@ public class StockUpdaterDAOImp implements StockUpdaterDAO {
 	public void updateStocks(int prod_id, int qty) {
 		DefaultTransactionDefinition transactionDefinition = new DefaultTransactionDefinition();
 		transactionDefinition.setIsolationLevel(TransactionDefinition.ISOLATION_SERIALIZABLE);
-		TransactionStatus transactionStatus = transactionManager.getTransaction(transactionDefinition);
+		TransactionStatus transactionStatus = transactionManager1.getTransaction(transactionDefinition);
 		System.out.println("   qty " + qty);
 
 		try {
@@ -47,9 +47,9 @@ public class StockUpdaterDAOImp implements StockUpdaterDAO {
 
 			// Perform any additional update operations here
 
-			transactionManager.commit(transactionStatus);
+			transactionManager1.commit(transactionStatus);
 		} catch (Exception e) {
-			transactionManager.rollback(transactionStatus);
+			transactionManager1.rollback(transactionStatus);
 			// Handle the exception
 		}
 	}
